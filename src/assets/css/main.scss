@@ -1,5 +1,5 @@
-$body-color: yellow;
-
-body {
-  background-color: $body-color;
-}
+@import './modules/_variables.scss';
+@import './modules/_base.scss';
+@import './modules/_utilities.scss';
+@import './modules/_section.scss';
+@import './modules/_navigation.scss';

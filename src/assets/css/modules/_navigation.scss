@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-family: 'Satisfy', cursive;
+    color: $primaryColor;
+    font-size: 2rem;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  &__menu-item {
+    margin-right: 20px;
+  }
+
+  &__link {
+    color: $secondaryColor;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+
+    &:hover {
+      color: $white;
+      border-bottom: 2px solid $primaryColor;
+    }
+  }
+}

@@ -16,7 +16,27 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+      },
+      {
+        test: /\.(html)$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true,
+            },
+          },
+        ],
+      },
     ],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      title: 'Steakhouse',
+    }),
+  ],
 };
