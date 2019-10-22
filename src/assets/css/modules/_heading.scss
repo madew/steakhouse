@@ -1,0 +1,12 @@
+.heading {
+  font-family: 'Merriweather', sans-serif;
+  color: $white;
+
+  &--big {
+    font-size: 2rem;
+
+    @include atMedium {
+      font-size: 3rem;
+    }
+  }
+}

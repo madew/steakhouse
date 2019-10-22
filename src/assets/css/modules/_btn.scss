@@ -1,0 +1,22 @@
+.btn {
+  font-family: 'Merriweather', sans-serif;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  @include atSmall {
+    font-size: 1rem;
+  }
+
+  &--primary {
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 3px;
+    padding: 0.35em 0.5em;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
