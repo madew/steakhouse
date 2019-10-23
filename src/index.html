@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="fullpage">
-      <div class="section">
+      <div data-tooltip="Home" class="section">
         <div class="section__wrapper pt-2">
           <nav class="navigation">
             <div class="navigation__logo">Steakhouse</div>
@@ -42,7 +42,7 @@
               </li>
             </ul>
           </nav>
-          <div class="hero mt-3"> 
+          <div class="hero mt-3">
             <div class="hero__content">
               <div>
                 <h1 class="heading heading--big">
@@ -58,9 +58,30 @@
         </div>
       </div>
 
-      <div class="section">Some section 1</div>
-      <div class="section">Some section 1</div>
-      <div class="section">Some section 1</div>
+      <div class="section" data-tooltip="About Us">
+        <div class="section__wrapper flex-center full-height">
+          <div class="our-story">
+            <div class="our-story__image">
+              <img src="assets/images/our-story.jpg" alt="" />
+            </div>
+            <div class="our-story__content">
+              <h3 class="heading__secondary">Discover</h3>
+              <h2 class="heading heading--medium mt-1">Our Story</h2>
+              <p class="text mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                inventore iste eveniet impedit accusamus nam sunt provident
+                asperiores perspiciatis explicabo error, beatae perferendis ad
+                minima ipsum, minus aliquid quae doloribus voluptatum?
+                Repellendus quia reiciendis et nulla recusandae illo, tenetur
+                hic.
+              </p>
+              <a class="btn btn--secondary mt-2">More About Us &#10141;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" data-tooltip="Menu">Some section 1</div>
+      <div class="section" data-tooltip="Events">Some section 1</div>
     </div>
   </body>
 </html>

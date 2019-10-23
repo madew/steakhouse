@@ -1,0 +1,36 @@
+.our-story {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+
+  @include atXSmall {
+    padding: 10% 0;
+  }
+
+  @include atSmall {
+    padding: 0;
+    flex-direction: row;
+    height: auto;
+  }
+
+  &__image {
+    flex: 1;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    flex: 2;
+    padding: 30px 25px;
+    background-color: $white;
+    color: $black;
+
+    @include atMedium {
+      padding: 50px 85px;
+    }
+  }
+}

@@ -17,3 +17,20 @@ a {
 img {
   width: 100%;
 }
+
+// Overwrite css rule to change color dots from fullpage.js
+#fp-nav ul li a span {
+  background: $primaryColor !important;
+}
+
+.text {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 0.75rem;
+
+  @include atSmall {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
