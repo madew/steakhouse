@@ -32,6 +32,6 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.7"
+    "fullpage.js": "^4.0.5"
   }
 }
